@@ -1,7 +1,8 @@
 {
     "manifest_version": 2,
-    "name": "Coronavirus Immunity",
-    "version": "0.1.0",
+    "version": "1.0.0",
+    "name": "Coronavirus Tracker",
+    "description": "To Do Progressive web application.",
     "content_scripts": [
       {
         "matches": ["<all_urls>"],
@@ -9,4 +10,17 @@
         "css": ["styles.css"]
       }
     ]
+  }
+
+  {
+    "manifest_version": 2,
+    "version": "1.0.0",
+    "name": "Todo PWA Application",
+    "short_name": "Todo",
+    "description": "To Do Progressive web application.",
+    "start_url": "./index.html?home=true",
+    "theme_color": "#111111",
+    "background_color": "#DDDDDDD",
+    "display": "fullscreen",
+    "orientation": "portrait"
   }
