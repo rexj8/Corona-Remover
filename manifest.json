@@ -1,15 +1,20 @@
 {
-    "manifest_version": 2,
-    "version": "1.0.0",
-    "name": "Coronavirus Tracker",
-    "description": "First extension",
-    "content_scripts": [
-      {
-        "matches": ["<all_urls>"],
-        "js": ["script.js"],
-        "css": ["style.css"]
-      }
-    ]
-  }
-
-  
+  "manifest_version": 2,
+  "version": "1.0.0",
+  "name": "Coronavirus Tracker",
+  "description": "First extension",
+  "browser_action": {
+    "default_icon": {
+      "128": "icons/icon-128x128.png"
+    },
+    "default_title": "Corona tracker",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["script.js"],
+      "css": ["style.css"]
+    }
+  ]
+}
